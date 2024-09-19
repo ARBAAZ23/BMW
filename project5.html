@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scaling=1.0" >
+<title>table&list</title>
+<style>
+
+*{
+	box-sizing:border-box;
+}
+body{
+	background:#f9f9f9;
+}
+h1{
+	text-align:center;
+	background-color:green;
+	color:white;
+	margin:0 20px 0 20px;
+	padding:40px;
+	font-size:40px;
+}
+hr{
+	margin:0 px 0 15px;
+	background-color:green;
+	border:2px solid green;	
+}
+.main{
+	background-color:white;
+	margin:50px 20px 50px 20px;
+	padding:20px;
+	border-radius:10px;
+	box-shadow: 5px 5px 5px 5px black;
+} 
+table{
+	width:100%;
+	border: 2px solid green;
+	border-collapse:collapse;
+}
+th{
+	text-align:left;
+	background-color:green;
+	color:white;
+	border:1px solid green;
+	border-collapse:collapse;
+	padding:10px;
+}
+td{
+	padding:10px;
+}
+tr{
+	border-bottom:1px solid lightgray;
+} 
+tr:nth-child(2){
+  background-color: #dddddd;
+}
+tr:nth-child(6){
+  background-color: #dddddd;
+}
+tr:nth-child(3){
+  background-color: #f9f9f9;
+}
+tr:nth-child(5){
+  background-color: #f9f9f9s;
+}
+tr:hover{
+	background-color:lightgreen;
+	color:white;
+}
+p{
+	background-color:green;
+	color:white;
+	border-radius:4px;
+	padding:7px;
+}
+.li{
+	border-bottom:1px solid gray;
+	padding:5px;
+	margin-left:-20px;
+}
+li{
+	padding:5px;
+	margin-left:-20px;
+}
+</style>
+</head>
+<body>
+
+<h1>Enhanced Product Catalog</h1>
+
+<div class="main">
+	<h2>Our Products</h2>
+<hr>
+<br>
+	<table>
+		<tr>
+			<th>Product Name</th>
+			<th>Category</th>
+			<th>Price</th>
+			<th>Stock Status</th>
+			<th>Rating</th>
+		</tr>
+		<tr>
+			<td>Smartphone</td>
+			<td>Electronics</td>
+			<td>$699</td>
+			<td>In Stock</td>
+			<td>&#9733 &#9733 &#9733 &#9733 &#9734</td>
+		</tr>
+		<tr>
+			<td>Headphone</td>
+			<td>Accessories</td>
+			<td>$199</td>
+			<td>Out of Stock</td>
+			<td>&#9733 &#9733 &#9733 &#9734 &#9734</td>
+		</tr>
+		<tr>
+			<td>Laptop</td>
+			<td>Electronics</td>
+			<td>$999</td>
+			<td>In Stock</td>
+			<td>&#9733 &#9733 &#9733 &#9733 &#9733</td>
+		</tr>
+		<tr>
+			<td>Camera</td>
+			<td>Electronics</td>
+			<td>$499</td>
+			<td>In Stock</td>
+			<td>&#9733 &#9733 &#9733 &#9733 &#9733</td>
+		</tr>
+		<tr>
+		<td colspan="5"><i>Prices are subject to change</i></td>
+		</tr>
+	</table>	
+</div>
+
+<div class="main">
+	<h2>Catergroy</h2>
+<hr>
+	<p>Electronics</p>
+	<p>Accessories</p>
+	<p>Home Appliances</p>
+	<p>Furniture</p>
+	<p>Sports</p>
+</div>
+
+<div class="main">
+	<h2>Product Features</h2>
+<hr>
+	<ol>
+		<li class="li">High Quality</li>
+		<li class="li">Affordable Prices</li>
+		<li class="li">24/7 Customer Support</li>
+		<li class="li">Fast Delivery</li>
+		<li>Secure Payments</li>
+	</ol>
+	
+</div>
+
+</body>
+</html>

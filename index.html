@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewports" content="width=device-width , initial-scale=1.0">
+<link rel="icon" type="image/jpeg" href="bmwlogo.jpeg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<title>BMW Cars</title>
+<style>
+*{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+	font-family: 'Montserrat', sans-serif;
+
+}
+body{
+	background:white;
+}
+
+#logo{
+	height:50px;
+	width:50px;
+	cursor:pointer
+}
+
+ul {
+  list-style-type: none;
+  background-color:white;  
+}
+
+li a {
+	display:inline-block;
+	color:#777777;
+	padding:20px 20px;
+	text-decoration:none;
+ 
+}
+
+li a:hover {
+	color:black;
+	text-decoration:underline;
+}
+
+#nav{
+	padding-inline:20px;
+	padding-block:5px;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.left{
+	display:flex;
+	align-items:center;
+	gap:20px;
+}
+
+#nav ul{
+	display:flex;
+	column-gap:10px;
+}
+.social-links i{
+	padding-inline:10px;
+	cursor:pointer;
+	color:#777777;
+}
+.main{
+	padding-inline:100px;
+	padding-block:50px;
+}
+.head{
+	padding-inline:100px;
+	padding-block:50px;
+	display:flex;
+	justify-content:center;
+	gap:20px;
+	flex-wrap:wrap;
+
+}
+#series{
+	width:100%;
+	padding-inline:20px;
+	padding-block:50px;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+	
+}
+#series ul{
+	display:flex;
+	margin-left:70px;	
+}
+#car-size{
+	width:280px;
+	height:150px;
+}
+#electric{
+	height:50px;
+	width:50px;
+	cursor:pointer;
+}
+.carimage{
+	position:relative;
+	transform:scale(1);
+	transition:all 0.3s ease;
+}
+.carimage:hover{
+	transform:scale(1.2);
+}
+.desc{
+	text-align:left;
+	padding:10px;
+}
+.col-size{
+	width:20%;
+}
+.H2{
+	margin-left:200px;
+	margin-top:50px;
+	color:#777777;
+}
+.hr{
+	padding-inline:100px;
+	color:#777777;
+}
+.middle{
+	display:flex;
+}
+.middle ul{
+	display:flex;
+}
+.last{
+	display:flex;
+	color:#5A5A5A;
+	justify-content:center;
+}
+.h6{
+	padding-inline:40px;
+}
+@media screen and(max-width:1600px){
+	.column{
+		width:100%;
+	}
+}
+@media screen and(max-width:1200px){
+	.colum
+		width:100%;
+	}
+}
+@media screen and(max-width:600px){
+	.column{
+		width:100%;
+	}
+}
+
+</style>
+</head>
+<body>
+
+<div id="nav">
+	<div class="left">
+		<div>
+			<abbr title="BMW Logo"><img id="logo" src="bmwlogo.jpeg"></abbr>
+		</div>
+		<ul>
+			<li><a href="">Models</a></li>
+			<li><a href="">Electric</a></li>
+			<li><a href="">Configurator</a></li>
+			<li><a href="">Visit Online Shop</a></li>
+			<li><a href="">More BMW</a></li>
+
+		</ul>
+	</div>
+	
+	<div class="social-links">
+		<i class="fas fa-user"></i>
+		<i class="fas fa-shopping-cart"></i>
+		<i class="fas fa-map-marker-alt"></i>
+		<i class="fas fa-search"></i>
+	</div>
+	
+</div>
+
+<div class="main">
+	<h1>FIND YOUR BMW.</h1><br>
+	<h2>FILTER</h2><br><br>
+	<p>> Show more filters</p><br><br>
+	<h4><i>25</i> vehicle found</h4>
+</div>	
+<div id="series">
+	<ul>
+		<li><a href="#BMWi">BMWi</a></li>
+		<li><a href="#X">X</a></li>
+		<li><a href="#M">M</a></li>
+		<li><a href="#7">7</a></li>
+		<li><a href="#5">5</a></li>
+		<li><a href="#3">3</a></li>
+		<li><a href="#2">2</a></li>
+		<li><a href="#Z4">Z4</a></li>
+	</ul>
+</div>
+
+<div>
+	<h2 class="H2" id="BMWi">BMW i</h2>
+	<div class="head">
+		<div class="col-size">
+			<img id="electric" src="electricsymbol.jpg">
+		
+			<div class="carimage">
+				<img id="car-size" src="ix1.png" alt="BMW iX1">
+			</div>
+			<div class="desc">THE FIRST FULLY-ELECTRIC BMW iX1</div>
+				<abbr title="THE FIRST FULLY-ELECTRIC BMW iX1"><p>Full-Electric</p></abbr>
+				<b><p>Starting from ₹66,90,000</p></b>
+		</div>
+
+		<div class="col-size">
+			<img id="electric" src="electricsymbol.jpg">
+		
+			<div class="carimage">
+				<img id="car-size" src="ix50.png" alt="BMW iX1">
+			</div>
+			<div class="desc">THE NEW ALL-ELECTRIC BMW iX xDRIVE50</div>
+				<abbr title="THE NEW ALL-ELECTRIC BMW iX xDRIVE50"><p>Full-Electric</p></abbr>
+				<b><p>Starting from ₹1,39,50,000</p></b>
+		</div>
+		
+		<div class="col-size">
+			<img id="electric" src="electricsymbol.jpg">
+		
+			<div class="carimage">
+				<img id="car-size" src="i4.png" alt="BMW iX1">
+			</div>
+			<div class="desc">THE FULLY-ELECTRIC BMW i4</div>
+				<abbr title="THE FULLY-ELECTRIC BMW i4"><p>Full-Electric</p></abbr>
+				<b><p>Starting from ₹66,90,000</p></b>
+		</div>
+		
+		<div class="col-size">
+			<img id="electric" src="electricsymbol.jpg">
+		
+			<div class="carimage">
+				<img id="car-size" src="i7.png" alt="BMW iX1">
+			</div>
+			<div class="desc">THE FULLY-ELECTRIC BMW i7</div>
+				<abbr title="THE FULLY-ELECTRIC BMW i7"><p>Full-Electric</p></abbr>
+				<b><p>Starting from ₹66,90,000</p></b>
+		</div>
+		
+		<div class="col-size">
+			<img id="electric" src="electricsymbol.jpg">
+		
+			<div class="carimage">
+				<img id="car-size" src="i7m70.png" alt="BMW iX1">
+			</div>
+			<div class="desc">THE FIRST-EVER BMW i7 M70xDRIVE</div>
+				<abbr title="THE FIRST-EVER BMW i7 M70xDRIVE"><p>Full-Electric</p></abbr>
+				<b><p>Starting from ₹66,90,000</p></b>
+		</div>
+		
+		<div class="col-size">
+			<img id="electric" src="electricsymbol.jpg">
+		
+			<div class="carimage">
+				<img id="car-size" src="I7M60.png" alt="BMW iX1">
+			</div>
+			<div class="desc">THE FIRST-EVER BMW i7 M60xDRIVE</div>
+				<abbr title="THE FIRST-EVER BMW i7 M60xDRIVE"><p>Full-Electric</p></abbr>
+				<b><p>Starting from ₹66,90,000</p></b>
+		</div>
+	</div>				
+</div>
+
+<div class="hr">
+<hr>
+</div>
+
+<div>
+	<h2 class="H2" id="X">X</h2>
+	<div class="head">
+		<div class="col-size">
+			<div class="carimage">
+				<img id="car-size" src="X1.png" alt="BMW X1">
+			</div>
+			<div class="desc">THE BMW X1</div>
+				<abbr title="THE BMW X1"><p>Petrol-Diesel</p></abbr>
+				<b><p>Starting from ₹49,90,000</p></b>
+		</div>
+		
+		<div class="col-size">
+			<div class="carimage">
+				<img id="car-size" src="X3.png" alt="BMW X3">
+			</div>
+			<div class="desc">THE BMW X3</div>
+				<abbr title="THE BMW X3"><p>Diesel</p></abbr>
+				<b><p>Starting from ₹72,50,000</p></b>
+		</div>
+		
+		<div class="col-size">
+			<div class="carimage">
+				<img id="car-size" src="X5.png" alt="BMW X5">
+			</div>
+			<div class="desc">THE BMW X5</div>
+				<abbr title="THE BMW X5"><p>Petrol-Diesel</p></abbr>
+				<b><p>Starting from ₹97,00,000</p></b>
+		</div>
+		
+		<div class="col-size">
+			<div class="carimage">
+				<img id="car-size" src="X7.png" alt="BMW X7">
+			</div>
+			<div class="desc">THE BMW X5</div>
+				<abbr title="THE BMW X7"><p>Petrol-Diesel</p></abbr>
+				<b><p>Starting from ₹1,30,00,000</p></b>
+		</div>
+	</div>				
+</div>
+
+<div class="hr">
+<hr>
+</div>
+
+<div>
+	<h2 class="H2" id="M">M</h2>
+	<div class="head">
+		<div class="col-size">
+			<div class="carimage">
+				<img id="car-size" src="M2.png" alt="BMW M2 COUPE">
+			</div>
+			<div class="desc">THE ALL-NEW BMW M2 COUPE</div>
+				<abbr title="THE ALL-NEW BMW M2 COUPE"><p>Petrol</p></abbr>
+				<b><p>Starting from ₹99,90,000</p></b>
+		</div>
+		
+		<div class="col-size">
+			<div class="carimage">
+				<img id="car-size" src="M340i.png" alt="BMW M340i">
+			</div>
+			<div class="desc">THE BMW M340i</div>
+				<abbr title="THE BMW M340i"><p>Petrol</p></abbr>
+				<b><p>Starting from ₹72,90,000</p></b>
+		</div>
+		
+		<div class="col-size">
+			<div class="carimage">
+				<img id="car-size" src="Z4M30i.png" alt="BMW Z4 M40i">
+			</div>
+			<div class="desc">THE NEW BMW Z4 M40i</div>
+				<abbr title="THE NEW BMW Z4 M40i"><p>Petrol</p></abbr>
+				<b><p>Starting from ₹90,00,000</p></b>
+		</div>
+		
+		<div class="col-size">
+			<div class="carimage">
+				<img id="car-size" src="M8.png" alt="BMW M8 COMPETITION COUPE">
+			</div>
+			<div class="desc">THE BMW M8 COMPETITION COUPE</div>
+				<abbr title="THE BMW M8 COMPETITION COUPE"><p>Petrol</p></abbr>
+				<b><p>Starting from ₹2,44,00,000</p></b>
+		</div>
+		
+		<div class="col-size">
+			<img id="electric" src="electricsymbol.jpg">
+			<div class="carimage">
+				<img id="car-size" src="i70M70.png" alt="BMW i70 M70xDRIVE">
+			</div>
+			<div class="desc">THE FIRST-EVER BMW i70 M70xDRIVE</div>
+				<abbr title="THE FIRST-EVER BMW i70 M70xDRIVE"><p>Petrol</p></abbr>
+				<b><p>Starting from ₹2,50,00,000</p></b>
+		</div>
+		
+		<div class="col-size">
+			<img id="electric" src="hybrid.png">
+			<div class="carimage">
+				<img id="car-size" src="XM.png" alt="BMW XM">
+			</div>
+			<div class="desc">THE BMW XM</div>
+				<abbr title="THE BMW XM"><p>Petrol</p></abbr>
+				<b><p>Starting from ₹2,60,00,000</p></b>
+		</div>
+		
+		<div class="col-size">
+			<img id="electric" src="electricsymbol.jpg">
+			<div class="carimage">
+				<img id="car-size" src="i5M60.png" alt="BMW i5M60">
+			</div>
+			<div class="desc">THE FIRST-EVER BMW  	</div>
+				<abbr title="THE FIRST-EVER BMW i5 M60xDRIVE"><p>Petrol</p></abbr>
+				<b><p>Starting from ₹1,19,50,000</p></b>
+		</div>
+		
+		<div class="col-size">
+		<br><br>
+			<div class="carimage">
+				<img id="car-size" src="M4.png" alt=" s">
+			</div>
+			<div class="desc">THE  NEW BMW M4 COMPETITION COUPE WITH MxDRIVE</div>
+				<abbr title=" THE NEW BMW M4 COMPETITION COUPE WITH MxDRIVE"><p>Petrol</p></abbr>
+				<b><p>Starting from ₹1,53,00,000</p></b>
+		</div>
+	</div>				
+</div>
+
+<div class="hr">
+<hr>
+</div>
+
+<div>
+	<h2 class="H2" id="7">7</h2>
+	<div class="head">
+		<div class="col-size">
+			<div class="carimage">
+				<img id="car-size" src="7SS.png" alt="BMW 7 SERIES SEDAN">
+			</div>
+			<div class="desc">THE BMW 7 SERIES SEDAN</div>
+				<abbr title="THE BMW 7 SERIES SEDAN"><p>Petrol-Diesel</p></abbr>
+				<b><p>Starting from ₹49,90,000</p></b>
+		</div>
+		
+		<div class="col-size">
+			<div class="carimage">
+				<img id="car-size" src="7SS.png" alt="BMW 7 SERIES PROTECTION">
+			</div>
+			<div class="desc">THE BMW 7 SERIES PROTECTION</div>
+				<abbr title="THE BMW 7 SERIES PROTECTION"><p>Diesel</p></abbr>
+				<b><p>Starting from ₹72,50,000</p></b>
+		</div>
+	</div>				
+</div>
+
+<div class="hr">
+<hr>
+</div>
+
+<div>
+	<h2 class="H2" id="5">5</h2>
+	<div class="head">
+		<div class="col-size">
+			<div class="carimage">
+				<img id="car-size" src="5S.png" alt="BMW 5 SERIES LONG WHEELBASE">
+			</div>
+			<div class="desc">THE BMW 5 SERIES LONG WHEELBASE</div>
+				<abbr title="THE BMW 5 SERIES LONG WHEELBASE"><p>Petrol-Diesel</p></abbr>
+				<b><p>Starting from ₹72,90,000</p></b>
+		</div>
+	</div>				
+</div>
+
+<div class="hr">
+<hr>
+</div>
+
+<div>
+	<h2 class="H2" id="3">3</h2>
+	<div class="head">
+		<div class="col-size">
+			<div class="carimage">
+				<img id="car-size" src="M340i.png" alt="BMW M340i">
+			</div>
+			<div class="desc">THE BMW M340i</div>
+				<abbr title="THE BMW M340i"><p>Petrol</p></abbr>
+				<b><p>Starting from ₹72,90,000</p></b>
+		</div>
+		
+		<div class="col-size">
+			<div class="carimage">
+				<img id="car-size" src="3S.png" alt="BMW 3 SERIES GRAN	LIMOUSINE">
+			</div>
+			<div class="desc">THE BMW 3 SERIES GRAN	LIMOUSINE</div>
+				<abbr title="THE BMW 3 SERIES GRAN	LIMOUSINE"><p>Diesel</p></abbr>
+				<b><p>Starting from ₹60,60,000</p></b>
+		</div>
+	</div>				
+</div>
+
+<div class="hr">
+<hr>
+</div>
+
+<div>
+	<h2 class="H2" id="2">2</h2>
+	<div class="head">
+		<div class="col-size">
+			<div class="carimage">
+				<img id="car-size" src="2S.png" alt="BMW 2 SERIES GRAN COUPE">
+			</div>
+			<div class="desc">THE BMW 2 SERIES GRAN COUPE</div>
+				<abbr title="THE BMW 2 SERIES GRAN COUPE"><p>Petrol-Diesel</p></abbr>
+				<b><p>Starting from ₹43,90,000</p></b>
+		</div>
+	</div>				
+</div>
+
+<div class="hr">
+<hr>
+</div>
+
+<div>
+	<h2 class="H2" id="Z4">Z4</h2>
+	<div class="head">
+		<div class="col-size">
+			<div class="carimage">
+				<img id="car-size" src="Z4M30i.png" alt="BMW Z4 M40i">
+			</div>
+			<div class="desc">THE NEW BMW Z4 M40i</div>
+				<abbr title="THE NEW BMW Z4 M40i"><p>Petrol</p></abbr>
+				<b><p>Starting from ₹90,00,000</p></b>
+		</div>
+	</div>				
+</div>
+
+<br>
+<hr>
+<br>
+
+<div class="middle">
+	<ul>
+		<li><a href="#">FIND YOUR BMW</a></li>
+		<li><a href="#">All Models</a></li>
+	</ul>
+</div>
+
+<div >
+	<div class="last">
+		<h6 class="h6">Contact
+		<ul>
+			<li><a href="#">Find a Dealer</a></li>
+			<li><a href="#">Request a Test Drive</a></li>
+			<li><a href="#">Careers</a></li>
+			<li><a href="#">Contact Us</a></li>	
+		</ul>
+		</h6>
+	<div>
+	<div class="last">
+		<h6 class="h6">Quick Links
+		<ul>
+			<li><a href="#">Build Your BMW</a></li>
+			<li><a href="#">BMW Finanical Services</a></li>
+			<li><a href="#">BMW Safety</a></li>
+			<li><a href="#">EMI Calculator</a></li>
+			<li><a href="#">BMW Premium Selection(Used Cars)</a></li>			
+		</ul>
+		</h6>
+	<div>
+	<div class="last">
+		<h6 class="h6">Experience BMW
+		<ul>
+			<li><a href="#">BMW Group</a></li>
+			<li><a href="#">BMW Excellence Club</a></li>
+			<li><a href="#">BMW Motorrad</a></li>
+			<li><a href="#">Charging Network</a></li>	
+		</ul>
+		</h6>
+	<div>
+	<div class="last">
+		<h6 class="h6">Legal
+		<ul>
+			<li><a href="#">Legal Disclaimer/Imprint</a></li>
+			<li><a href="#">Privay Policy</a></li>	
+		</ul>
+		</h6>
+	<div>
+</div>
+</body>
+</html>
