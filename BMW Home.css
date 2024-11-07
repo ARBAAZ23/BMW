@@ -108,6 +108,11 @@ li a:hover {
 	margin-left: 100px;
 	margin-top: 100px;
 }
+.name h6{
+	font-size: 18px;
+	margin-left: 100px;
+
+}
 .color p{
 	padding: 18px;
 	color: whitesmoke;
@@ -345,4 +350,38 @@ h6 a:hover{
 }
 .footer2 a:hover{
 	color: black;
+}
+@media (max-width: 768px) {
+	.BMWbackground{
+		width:100%;
+	}
+	video{
+		width: 100%;
+		width:fit-content;
+	}
+	ul li{
+		display:none; 
+	}
+	.name h3{
+		display:none;
+	}
+	.name p {
+		padding-top: 100px;
+		padding-left: 100px;
+		margin-top: 450px;
+		font-size: 20px;
+	}	
+	.name span{
+		font-size: 70px;
+		margin-left: 200px;
+	}
+	.name h6{
+		margin-left: 140px
+	}
+	.color p{
+		margin-top: 30px;
+	
+		display:inline-block;
+		text-align: l;
+	}
 }
