@@ -15,7 +15,11 @@
             <div>
                 <abbr title="BMW Logo"><a href="index.html"><img id="logo" src="./BMWImg/bmwlogo.jpeg"></a></abbr>
             </div>
-            <ul>
+            <ul id="nav1">
+				<ul class="menu-list">
+					<div class="cancel-icon">
+						<i class="fas fa-times"></i>
+					</div>
                 <li><a href="Model.html">Models</a></li>
                 <li><a href="elecrticpage.html">Electric</a></li>
                 <li><a href="configurator.html">Configurator</a></li>
@@ -27,9 +31,12 @@
         <div class="social-links">
             <i class="fas fa-user"></i>
             <i class="fas fa-shopping-cart"></i>
-            <i class="fas fa-map-marker-alt"></i>
+            <i id="hidden" class="fas fa-map-marker-alt"></i>
             <i class="fas fa-search"></i>
-        </div>	
+        </div>
+        <div class="menu-icon">
+			<i class="fa-solid fa-bars"></i>
+		</div>	
     </div>
 
     <div class="main">
@@ -171,7 +178,7 @@
         <hr>
     </div>
 
-    <div></div>
+    <div class="main1">
         <h2 class="H2" id="Sports Activity Vehicle">SPORTS ACTIVITY VEHICLE</h2>
         <div class="head">
             <div class="col-size">
@@ -365,5 +372,6 @@
             </ul>
         </div>
     </div>
+    <script src="configurator.js"></script>
 </body>
 </html>
