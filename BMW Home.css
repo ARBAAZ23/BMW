@@ -1,36 +1,13 @@
 *{
-	box-sizing:border-box;
-	margin:0;
-	padding:0;
-	font-family: 'Montserrat', sans-serif;
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
-	background:white;
-}
-.BMWbackground {
-    position: relative;
+.BMWbackground{
+    width:100%;
     height: 100vh;
-    width: 99vw; 
-    overflow: hidden;
-	
-	
-}
-
-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    transform: translate(-50%, -50%);
-	z-index: -1;
-	
-}	
-#bg{
-   
+    display:flex;
+    align-items: center;
 }
 #logo{
 	height:50px;
@@ -48,6 +25,7 @@ li a {
 	color:#fcf7f7;
 	padding:20px 20px;
 	text-decoration:none;
+    font-size: 20px;
 	
 }
 
@@ -64,10 +42,10 @@ li a:hover {
 	display:flex;
 	justify-content:space-between;
 	align-items:center;
-    position: absolute;
     top:0;
     right:0;
     left:0;
+    position: absolute;;
 
 }
 
@@ -85,45 +63,44 @@ li a:hover {
 	padding-inline:10px;
 	cursor:pointer;
 	color:#fefafa;
+    font-size: 25px;
 }
 .social-links i:hover{
 	color:rgb(77, 76, 76);
 }
+.menu-list{
+	
+}
+.menu-icon{
+	display: none;
+}
 .name{
-	margin-top: 100px;
-	color:white
+    color:whitesmoke;
+	margin-left: 50px;
 }
 .name h3{
-	font-size: 20px;
-	margin-left: 70px;
-	margin-bottom: 100px;
+    font-size: 40px;
+	margin-bottom: 30px;
 }
 .name p{
-	font-size: 18px;
-	margin-left: 100px;
-
+    font-size: 30px;
 }
 .name span{
 	font-size: 150px;
-	margin-left: 100px;
-	margin-top: 100px;
 }
 .name h6{
-	font-size: 18px;
-	margin-left: 100px;
-
+	font-size: 30px;
 }
-.color p{
-	padding: 18px;
-	color: whitesmoke;
-	background-color: rgb(59, 59, 243) ;
-	margin-top: 10px;
-	margin-right: 1260px;
-	border-radius: 3px;
-}
-.color p:hover{
+.color{
+	padding:20px 20px;
 	background-color: blue;
-	cursor: pointer;
+	border-radius: 5px;
+	display: ruby;
+}
+.color p {
+    font-size: 25px;
+	margin-top: 20px;
+	align-items: center	;  
 }
 .BGiX{
 	margin-top: 30px;
@@ -133,27 +110,35 @@ li a:hover {
 	margin-bottom: 30px;
 }
 img{
-	
+	width: 100%;
+	height: 60%;
 }
 .textiX {
 	position: absolute;
 	top:40%;
 	bottom:50%;
-	left:100px;
+	left: 4%;
+}
+.textiX h4{
+	font-size: 30px;
 }
 .textiX h2{
-	font-size: 50px;	
+	font-size: 70px;	
 }
 .textiX p{
-	font-size: 30px;
+	font-size: 40px;
 	margin-bottom: 10px;
 }
-#color1 p{
-	padding:20px;
-	font-size: 18px;
-	background-color:rgb(59, 59, 243) ;
-	margin-right: 290px;
-	border-radius: 4px;
+#color1{
+	padding:20px 20px;
+	background-color: blue;
+	border-radius: 5px;
+	display: ruby;
+}
+#color1 p {
+    font-size: 25px;
+	margin-top: 25px;
+	align-items: center	;  
 }
 .main{
 	text-align: center;
@@ -173,7 +158,7 @@ img{
 
 }
 #newcar{
-	width:33.33%;
+	width:calc(100% / 3);
 	height:300px;
 }
 #newcar img{
@@ -184,7 +169,7 @@ img{
 	font-size: 25px;
 }
 #testdrive{
-	width: 33.33%;
+	width: calc(100% / 3);
 }
 #testdrive img{
 	width: 400px;
@@ -194,7 +179,7 @@ img{
 	font-size: 25px;
 }
 #buildown{
-	width: 33.33%;
+	width: calc(100% / 3);
 }
 #buildown img{
 	width:400px;
@@ -221,13 +206,12 @@ img{
 }
 .i7 img{
 		width: 100%;
-		height:100vh;
+		height:90vh;
 }
 #series7{
 	position: absolute;
-	top:2 0%;
-	bottom: 50%;
-	left:100px;
+	top:20%;
+	left:5%;
 }
 #series7 h6{
 	font-size: 40px;
@@ -236,27 +220,32 @@ img{
 #series7 p{
 	border: 1px solid white;
 	color:whitesmoke;
-	padding: 20px 80px;
-	margin-right: 340px;
+	font-size: 20px;
+	display: ruby;
+	padding: 20px 20px;
+	border-radius: 5px;
 }
 #series7 p:hover{
 	color: black;
 	border:1px solid black;
 }
+
 .imagebox{
 	display: flex;
 	margin-bottom: 20px;
+	gap: 50px;
+	padding-inline: 20px;
 }
 .image{
 	width:50%;
-	padding-inline: 100px;
+	
 }
 .image img{
 	width:700px;
-	height:400px;
+	height:auto;
 }
 .text{
-	padding-inline: 80px;
+	
 }
 .text h5{
 	font-size: 15px;
@@ -273,7 +262,7 @@ img{
 	margin-bottom: 50px;
 }
 .text span{
-	padding:20px 30px;
+	padding:20px 20px;
 	margin-top: 50px;
 	border: 1px solid black;
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -283,7 +272,7 @@ img{
 	border: 2px solid black;
 }
 .hr{
-	padding-inline:100px;
+	margin: inline 50px;; 	
 	color:#777777;
 }
 .middle{
@@ -301,6 +290,7 @@ img{
 	text-decoration: underline;
 }
 h6 a{
+	font-size: 10px;
 	color: #5A5A5A;
 }
 h6 a:hover{
@@ -314,13 +304,13 @@ h6 a:hover{
 }
 .h6{
 	padding-inline:40px;
+	font-size: 15px;
 }
 .footer1{
 	display:flex;
 	color:#0f0f0f;
 	height:60px;
 	justify-content:space-between;
-	align-item:center !important;
 	padding-inline:20px;
 	padding-block:20px;
 	
@@ -329,7 +319,7 @@ h6 a:hover{
 	display:flex;
 	height:60px;
 	padding:20px;
-	align-item:center !important;
+	
 }
 .footer1 span{
 	color: #0f0f0f;
@@ -351,37 +341,168 @@ h6 a:hover{
 .footer2 a:hover{
 	color: black;
 }
-@media (max-width: 768px) {
+
+.cancel-icon{
+	display: none;
+}
+
+@media only screen and (max-width: 768px) {
+	
 	.BMWbackground{
 		width:100%;
+		width:100vw;
 	}
-	video{
-		width: 100%;
-		width:fit-content;
+	#nav{
+		overflow: hidden;
 	}
-	ul li{
-		display:none; 
-	}
-	.name h3{
-		display:none;
-	}
-	.name p {
-		padding-top: 100px;
-		padding-left: 100px;
-		margin-top: 450px;
+	.cancel-icon{
+		position:absolute;
+		color: white;
+		right: 20px;
+		top:20px;
 		font-size: 20px;
-	}	
-	.name span{
-		font-size: 70px;
-		margin-left: 200px;
+		cursor: pointer;
+		display: block;
 	}
-	.name h6{
-		margin-left: 140px
-	}
-	.color p{
-		margin-top: 30px;
 	
-		display:inline-block;
-		text-align: l;
+	.menu-list{
+		position: fixed;
+		flex-direction: column;
+		background-color: black;
+		top:0;
+		left: -100%;
+		width:100%;
+		max-width:350px;
+		height: 100vh;
+		text-align: center;
+		display: none;
+		text-decoration: none;
+		transition: all 0.3s ease;
+	}
+	.menu-list.active{
+		left: 0;
+
+	}
+	.menu-list  li a{
+		color: #ebe8e8;
+		font: 18px;
+		margin-top: 10px;
+		transition: all 0.3 ease; 
+		text-decoration: none;
+	}
+	.menu-list li a:hover{
+		background: linear-gradient(45deg, rgb(37, 37, 133) , rgb(14, 14, 67), red, rgb(174, 171, 171));
+		background-clip: text;
+		color: transparent;
+		
+	}
+	.menu-icon{
+		color:rgb(247, 238, 238);
+		display: block;
+		font-size: 25px;
+	}
+	.menu-icon.hide{
+		display: none;
+	}
+	.social-links{
+		margin-left: 35px;
+
+	}
+	.BGiX{
+		width:100%;
+		height:100%;
+	}
+	.vidbg{
+		width: 100%;
+	}
+	#hidden{
+		display: none;
+	}
+	.textiX h4{
+		font-size: 12px;
+	}
+	.textiX h2{
+		font-size: 15px;
+	}
+	.textiX p{
+		font-size: 10px;
+	}
+	#color1{
+		padding: 5px 5px;
+	}
+	#color1 p{
+		font-size: 13px;
+	}
+	.main p{
+		font: 15px;
+	}
+	.main h5{
+		font-size: 20px;
+		margin:0;
+	}
+	.car{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	#newcar, #testdrive, #buildown{
+		width:100%;
+		height:200px;
+			 
+	}
+	#newcar img, #testdrive img, #buildown img{
+		width: 250px;
+		height: 100px;
+	}
+	#newcar p, #testdrive p, #buildown p{
+		padding:0;
+		margin-bottom: 20px;
+	}
+	.i7 img{
+		width: 100%;
+		height: 30vh;
+	}
+	#series7 h6{
+		font-size: 13px;
+	}
+	#series7 p{
+		padding: 5px 5px;
+		font-size: 10px;
+	}
+	.imagebox{
+		flex-wrap: wrap;
+		margin-inline: 20px;
+	}
+	.image img{
+		width:200%;
+	}
+	.text h5{
+		margin:0;
+		font-size: 20px;
+	}
+	.text h6{
+		margin: 1px;
+		font-size: 15px;
+	}
+	.text p{
+		margin: 2px;
+		font-size: 12px;
+	}
+	.text span{
+		margin: 5px;
+		font-size: 12px;
+		padding: 5px 5px;
+	}
+	.middle {
+		display: none;
+	}
+	hr{
+		width:100%;
+	}
+	.last{
+		display: none;
+	}
+	.footer2{
+		display: none;
 	}
 }
